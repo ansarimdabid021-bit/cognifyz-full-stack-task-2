@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Submission Successful</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+
+    <div class="background">
+
+        <div class="container">
+
+            <div class="header">
+
+                <span class="badge">
+                    COGNIFYZ • TASK 2
+                </span>
+
+                <h1>Application Submitted ✓</h1>
+
+                <p>
+                    Your data passed server-side validation
+                    successfully.
+                </p>
+
+            </div>
+
+
+            <div class="field">
+
+                <label>Full Name</label>
+
+                <input
+                    type="text"
+                    value="<%= submission.name %>"
+                    readonly
+                >
+
+            </div>
+
+
+            <div class="field">
+
+                <label>Email</label>
+
+                <input
+                    type="text"
+                    value="<%= submission.email %>"
+                    readonly
+                >
+
+            </div>
+
+
+            <div class="form-grid">
+
+                <div class="field">
+
+                    <label>Age</label>
+
+                    <input
+                        type="text"
+                        value="<%= submission.age %>"
+                        readonly
+                    >
+
+                </div>
+
+
+                <div class="field">
+
+                    <label>Role</label>
+
+                    <input
+                        type="text"
+                        value="<%= submission.role %>"
+                        readonly
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="field">
+
+                <label>Message</label>
+
+                <textarea readonly><%= submission.message %></textarea>
+
+            </div>
+
+
+            <div class="field">
+
+                <label>Temporary Record ID</label>
+
+                <input
+                    type="text"
+                    value="#<%= submission.id %>"
+                    readonly
+                >
+
+            </div>
+
+
+            <div class="field">
+
+                <label>Submitted At</label>
+
+                <input
+                    type="text"
+                    value="<%= submission.submittedAt %>"
+                    readonly
+                >
+
+            </div>
+
+
+            <button
+                onclick="window.location.href='/'"
+            >
+                Submit Another Response →
+            </button>
+
+
+            <div class="footer">
+
+                <span>Server Validation ✓</span>
+
+                <span>•</span>
+
+                <span>Temporary Storage ✓</span>
+
+                <span>•</span>
+
+                <span>EJS ✓</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

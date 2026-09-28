@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Validation Error</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+
+    <div class="background">
+
+        <div class="container">
+
+            <div class="header">
+
+                <span class="badge">
+                    SERVER VALIDATION
+                </span>
+
+                <h1>Validation Failed</h1>
+
+                <p>
+                    The server rejected the submitted data.
+                </p>
+
+            </div>
+
+
+            <% errors.forEach(function(error) { %>
+
+                <div
+                    style="
+                        padding: 14px;
+                        margin-bottom: 10px;
+                        border-radius: 10px;
+                        background: #fee2e2;
+                        color: #991b1b;
+                        border: 1px solid #fecaca;
+                    "
+                >
+                    ⚠ <%= error %>
+                </div>
+
+            <% }); %>
+
+
+            <button
+                onclick="window.location.href='/'"
+            >
+                ← Go Back and Fix
+            </button>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
